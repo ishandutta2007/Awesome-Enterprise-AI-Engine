@@ -13,7 +13,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Enterprise-AI-Engine/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Enterprise-AI-Engine?style=flat-square&color=gold" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Enterprise-AI-Engine/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Enterprise-AI-Engine?style=flat-square&color=gold" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Enterprise-AI-Engine/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Enterprise-AI-Engine?style=flat-square&color=blue" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Enterprise-AI-Engine/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Enterprise-AI-Engine?style=flat-square&color=red" alt="GitHub Issues" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Enterprise-AI-Engine/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Enterprise-AI-Engine?style=flat-square" alt="License" /></a>
@@ -74,9 +74,9 @@ Structurally, the industry exhibits a pronounced **"barbell" market concentratio
 
 ## 💻 Open-Source GitHub Projects
 
-*Leading open-source enterprise AI engines, private copilot interfaces, visual workflow orchestrators, and document RAG platforms. Sorted by GitHub Star Count (descending).*
+*Leading open-source enterprise AI engines, private copilot interfaces, visual workflow orchestrators, and document RAG platforms. Sorted by GitHub Stars_Count (descending).*
 
-| Repository | Stars | License | Description |
+| Repository | GitHub_Stars | License | Description |
 |:---|:---:|:---:|:---|
 | **[Dify](https://github.com/langgenius/dify)** | [![Stars](https://img.shields.io/github/stars/langgenius/dify?style=social&color=white)](https://github.com/langgenius/dify/stargazers) | Apache-2.0 | **Visual LLMOps & Agentic Workflow Engine.** An all-in-one platform combining visual prompt engineering, knowledge base retrieval (RAG), tool calling, and multi-agent orchestration for enterprise deployment. |
 | **[Open WebUI](https://github.com/open-webui/open-webui)** | [![Stars](https://img.shields.io/github/stars/open-webui/open-webui?style=social&color=white)](https://github.com/open-webui/open-webui/stargazers) | MIT | **Extensible Self-Hosted AI Chatbot Platform.** Feature-complete web UI supporting Ollama, OpenAI-compatible APIs, Model Context Protocol (MCP), multi-user RBAC, LDAP/SSO, and built-in vector RAG. |
@@ -101,7 +101,7 @@ We welcome community contributions, corrections, and new project submissions!
 
 1. 🍴 **Fork** the repository.
 2. 🌿 **Create a new branch**: `git checkout -b feature/add-new-engine`.
-3. 📝 **Add your project** in the appropriate table following the existing format (include name, star badge, license, and factual description).
+3. 📝 **Add your project** in the appropriate table following the existing format (include name, Stars_Badge, license, and factual description).
 4. ✅ **Ensure accuracy**: Verify links, pricing transparency, and license types.
 5. 🚀 **Submit a Pull Request** with a concise explanation of why the tool fits the Enterprise AI category.
 
