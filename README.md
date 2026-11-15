@@ -1,6 +1,6 @@
 # Awesome-Enterprise-AI-Engine
 
-# Top Enterprise AI Engine Ecosystem
+## Top Enterprise AI Engine Ecosystem
 
 **Curated List of SaaS Platforms & Open-Source GitHub Projects**  
 *Focused on Self-Hosted RAG, Agentic Workflows & Data-Sovereign AI Assistants*  
