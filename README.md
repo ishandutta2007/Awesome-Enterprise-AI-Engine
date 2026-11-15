@@ -74,7 +74,7 @@ Structurally, the industry exhibits a pronounced **"barbell" market concentratio
 
 ## 💻 Open-Source GitHub Projects
 
-*Leading open-source enterprise AI engines, private copilot interfaces, visual workflow orchestrators, and document RAG platforms. Sorted by GitHub Stars_Count (descending).*
+*Leading open-source enterprise AI engines, private copilot interfaces, visual workflow orchestrators, and document RAG platforms. Sorted by GitHub_Stars_Count (descending).*
 
 | Repository | GitHub_Stars | License | Description |
 |:---|:---:|:---:|:---|
