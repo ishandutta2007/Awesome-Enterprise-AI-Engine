@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Linear Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d18" />
+      <stop offset="50%" stop-color="#0e172a" />
+      <stop offset="100%" stop-color="#060913" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="primary-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <linearGradient id="cyan-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+
+    <!-- Subtle Grid Pattern -->
+    <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1" />
+    </pattern>
+
+    <!-- Radial Glow Behind Text -->
+    <radialGradient id="center-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="accent-glow" cx="80%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="cyan-glow" cx="20%" cy="80%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.16" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <style>
+    .title {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 52px;
+      letter-spacing: -1px;
+    }
+    .subtitle {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      fill: #94a3b8;
+      letter-spacing: 0.5px;
+    }
+    .badge-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 0.8px;
+    }
+
+    /* Dynamic / Animated floating elements in the background */
+    @keyframes floatParticle1 {
+      0% { transform: translateY(0px) translateX(0px); opacity: 0.3; }
+      50% { transform: translateY(-24px) translateX(15px); opacity: 0.8; }
+      100% { transform: translateY(0px) translateX(0px); opacity: 0.3; }
+    }
+    @keyframes floatParticle2 {
+      0% { transform: translateY(0px) translateX(0px); opacity: 0.4; }
+      50% { transform: translateY(22px) translateX(-18px); opacity: 0.9; }
+      100% { transform: translateY(0px) translateX(0px); opacity: 0.4; }
+    }
+    @keyframes pulseGlow {
+      0%, 100% { transform: scale(1); opacity: 0.7; }
+      50% { transform: scale(1.12); opacity: 1; }
+    }
+    @keyframes dashCycle {
+      to { stroke-dashoffset: -100; }
+    }
+
+    .particle-1 { animation: floatParticle1 7s ease-in-out infinite; }
+    .particle-2 { animation: floatParticle2 9s ease-in-out infinite; }
+    .pulse-layer { transform-origin: 600px 180px; animation: pulseGlow 6s ease-in-out infinite; }
+    .stream-line {
+      stroke-dasharray: 8, 12;
+      animation: dashCycle 8s linear infinite;
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="100%" height="100%" fill="url(#bg-grad)" rx="16" />
+  <rect width="100%" height="100%" fill="url(#grid-pattern)" rx="16" />
+
+  <!-- Ambient Glow Circles (Deep Background) -->
+  <circle cx="600" cy="180" r="340" fill="url(#center-glow)" class="pulse-layer" />
+  <circle cx="980" cy="80" r="280" fill="url(#accent-glow)" />
+  <circle cx="160" cy="320" r="260" fill="url(#cyan-glow)" />
+
+  <!-- Dynamic Network Connection Vectors (Background Layer) -->
+  <g opacity="0.35">
+    <path class="stream-line" d="M 100 80 Q 300 20 600 90 T 1100 60" fill="none" stroke="#6366f1" stroke-width="2" />
+    <path class="stream-line" d="M 80 340 Q 400 260 700 350 T 1120 320" fill="none" stroke="#ec4899" stroke-width="1.8" />
+    <path class="stream-line" d="M 200 40 Q 600 280 1000 40" fill="none" stroke="#38bdf8" stroke-width="1.5" />
+  </g>
+
+  <!-- Dynamic Floating Nodes & Constellations (Background Layer) -->
+  <g class="particle-1">
+    <circle cx="140" cy="110" r="4.5" fill="#38bdf8" />
+    <circle cx="140" cy="110" r="14" fill="none" stroke="#38bdf8" stroke-width="1" opacity="0.4" />
+    <circle cx="1060" cy="140" r="5" fill="#a855f7" />
+    <circle cx="1060" cy="140" r="16" fill="none" stroke="#a855f7" stroke-width="1" opacity="0.4" />
+    <circle cx="280" cy="70" r="3.5" fill="#ec4899" />
+  </g>
+  <g class="particle-2">
+    <circle cx="920" cy="330" r="4" fill="#6366f1" />
+    <circle cx="920" cy="330" r="12" fill="none" stroke="#6366f1" stroke-width="1" opacity="0.4" />
+    <circle cx="220" cy="270" r="4.5" fill="#38bdf8" />
+    <circle cx="1000" cy="260" r="3.5" fill="#f43f5e" />
+  </g>
+
+  <!-- Foreground Foreground Container / Crisp Text Presentation -->
+  <g id="foreground-content">
+    <!-- Top Pill / Badge -->
+    <g transform="translate(435, 68)">
+      <rect width="330" height="34" rx="17" fill="rgba(255, 255, 255, 0.06)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1" />
+      <circle cx="20" cy="17" r="5" fill="#10b981">
+        <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <text x="35" y="22" fill="#34d399" class="badge-text">CURATED ENTERPRISE AI ECOSYSTEM</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="600" y="175" text-anchor="middle" class="title" fill="#ffffff">
+      Awesome Enterprise AI Engine
+    </text>
+
+    <!-- Gradient Gradient Line Accent -->
+    <rect x="420" y="200" width="360" height="4" rx="2" fill="url(#primary-grad)" />
+
+    <!-- Subtitle -->
+    <text x="600" y="246" text-anchor="middle" class="subtitle">
+      Self-Hosted RAG • Autonomous Agents • Private &amp; Sovereign LLM Platforms
+    </text>
+
+    <!-- Feature Pills at Bottom -->
+    <g transform="translate(185, 296)">
+      <!-- Pill 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="180" height="38" rx="19" fill="rgba(99, 102, 241, 0.12)" stroke="rgba(99, 102, 241, 0.4)" stroke-width="1.2" />
+        <text x="90" y="24" text-anchor="middle" fill="#c7d2fe" class="badge-text">⚡ Self-Hosted RAG</text>
+      </g>
+      <!-- Pill 2 -->
+      <g transform="translate(200, 0)">
+        <rect width="210" height="38" rx="19" fill="rgba(168, 85, 247, 0.12)" stroke="rgba(168, 85, 247, 0.4)" stroke-width="1.2" />
+        <text x="105" y="24" text-anchor="middle" fill="#e9d5ff" class="badge-text">🤖 Agentic Workflows</text>
+      </g>
+      <!-- Pill 3 -->
+      <g transform="translate(430, 0)">
+        <rect width="210" height="38" rx="19" fill="rgba(236, 72, 153, 0.12)" stroke="rgba(236, 72, 153, 0.4)" stroke-width="1.2" />
+        <text x="105" y="24" text-anchor="middle" fill="#fbcfe8" class="badge-text">🔒 Sovereign Privacy</text>
+      </g>
+      <!-- Pill 4 -->
+      <g transform="translate(660, 0)">
+        <rect width="170" height="38" rx="19" fill="rgba(56, 189, 248, 0.12)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1.2" />
+        <text x="85" y="24" text-anchor="middle" fill="#bae6fd" class="badge-text">📊 Enterprise SaaS</text>
+      </g>
+    </g>
+  </g>
+</svg>
